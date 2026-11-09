@@ -1,0 +1,8 @@
+foreach(t protocol/test_commands protocol/test_parser hid/test_runner core/test_profiles core/test_recorder core/test_snake)
+  get_filename_component(n ${t} NAME)
+  add_executable(${n} ${t}.cpp)
+  target_link_libraries(${n} PRIVATE kcc_core Qt6::Test)
+  add_test(NAME ${n} COMMAND ${n})
+endforeach()
+set_tests_properties(test_recorder PROPERTIES ENVIRONMENT "QT_QPA_PLATFORM=offscreen")
+set_tests_properties(test_snake PROPERTIES ENVIRONMENT "QT_QPA_PLATFORM=offscreen")

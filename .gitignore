@@ -1,0 +1,76 @@
+# Build output
+/build/
+/build-*/
+/cmake-build-*/
+/dist/
+/out/
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+CTestTestfile.cmake
+compile_commands.json
+.cmake/
+*.autogen/
+*_autogen/
+.rcc/
+.qt/
+.ninja_deps
+.ninja_log
+.qmlls.ini
+*.qmlc
+*.jsc
+
+# Packaging leftovers
+*.dmg
+*.app/
+*.AppImage
+*.exe
+*.msi
+*.zip
+*.pkg
+
+# Developer aids and local scratch
+/tmp/
+/scratch/
+/snapshots/
+*.log
+*.ips
+*.crash
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.Spotlight-V100
+.Trashes
+.fseventsd
+
+# Windows
+Thumbs.db
+desktop.ini
+
+# Editors / IDEs
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+*.user
+*.autosave
+CMakeLists.txt.user*
+*.xcworkspace
+xcuserdata/
+.cache/
+.clangd/
+
+# Reverse-engineering inputs and outputs: the vendor software is not ours to redistribute
+/vendor/
+/re/
+/ghidra/
+*.gpr
+*.rep/
+inno_out/
+innoextract-out/
+DeviceDriver.exe
+ATTACK*SHARK*X85*SOFT*.exe
